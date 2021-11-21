@@ -50,7 +50,7 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <input className="btn" type="submit" value="Log In" />
+          <input className="btn" type="submit" value="Register" />
           <p>
             Don't have an account?{" "}
             <Link href="/account/register">Register</Link>
