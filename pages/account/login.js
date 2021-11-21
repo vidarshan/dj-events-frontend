@@ -1,6 +1,7 @@
 import { FaUser } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import { useState, useEffect, useContext } from "react";
+import "react-toastify/dist/ReactToastify.css";
 import AuthContext from "@/context/AuthContext";
 import Link from "next/link";
 import Layout from "@/components/Layout";
@@ -16,6 +17,10 @@ export default function LoginPage() {
     e.preventDefault();
     login({ email, password });
   };
+
+  useEffect(() => {
+    error && toast.error(error);
+  });
 
   return (
     <Layout title="User Login">
