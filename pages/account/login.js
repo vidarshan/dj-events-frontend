@@ -31,7 +31,7 @@ export default function LoginPage() {
         <ToastContainer />
         <form onSubmit={handleSubmit}>
           <div>
-            <label for="email">Email Address</label>
+            <label htmlFor="email">Email Address</label>
             <input
               placeholder="Email Address"
               type="email"
@@ -41,7 +41,7 @@ export default function LoginPage() {
             />
           </div>
           <div>
-            <label for="password">Password</label>
+            <label htmlFor="password">Password</label>
             <input
               placeholder="Password"
               type="password"
